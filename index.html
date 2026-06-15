@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дополни код</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <!-- ГЛАВНОЕ МЕНЮ -->
+    <section id="mainMenu" class="screen active">
+        <div class="menu-content">
+            <h1 class="logo">Дополни код</h1>
+            <p class="subtitle">Игровая викторина по Python</p>
+            <button class="main-btn" id="startBtn">Начать</button>
+        </div>
+    </section>
+
+    <!-- ЭКРАН ТЕМ -->
+    <section id="themesScreen" class="screen">
+        <h1 class="screen-title">Выберите тему</h1>
+        <div class="themes-grid">
+            <div class="theme-card" data-theme="lists">
+                <h2>Списки</h2>
+                <p>Работа со списками</p>
+            </div>
+            <div class="theme-card" data-theme="loops">
+                <h2>Циклы</h2>
+                <p>for, while, break</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ВИКТОРИНА -->
+    <section id="quizScreen" class="screen">
+        <div class="bg-layer" id="bgCurrent"></div>
+        <div class="bg-layer" id="bgNext"></div>
+
+        <div class="top-bar">
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+            <div class="score-box">
+                🏆 <span id="score">0</span>
+            </div>
+        </div>
+
+        <div class="quiz-container">
+            <div class="question-box">
+                <h2 id="questionTitle"></h2>
+                <pre id="questionCode"></pre>
+            </div>
+            <div class="answers-box" id="answersBox"></div>
+            <div class="explanation-box" id="explanationBox"></div>
+            <button id="actionBtn" class="main-btn">Проверить</button>
+        </div>
+    </section>
+
+    <!-- ФИНАЛ -->
+    <section id="resultScreen" class="screen">
+        <div class="result-box">
+            <h1>Тренировка завершена 🎉</h1>
+            <div id="stars" class="stars"></div>
+            <p id="finalScore"></p>
+            <button id="backMenuBtn" class="main-btn">В меню</button>
+        </div>
+    </section>
+
+    <audio id="correctSound" src="sounds/correct.mp3"></audio>
+    <audio id="wrongSound" src="sounds/wrong.mp3"></audio>
+    <audio id="clickSound" src="sounds/click.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
