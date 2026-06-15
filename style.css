@@ -316,3 +316,145 @@ button{
     from{ opacity:0; }
     to{ opacity:1; }
 }
+
+/* ===== МОБИЛЬНАЯ АДАПТАЦИЯ ===== */
+@media (max-width: 768px) {
+
+    body{
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .screen{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* Главное меню */
+    .menu-content{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 60px 20px;
+    }
+
+    .logo{
+        font-size: 52px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+    }
+
+    .main-btn{
+        font-size: 20px;
+        padding: 14px 35px;
+    }
+
+    /* Экран тем */
+    .screen-title{
+        font-size: 36px;
+        padding-top: 40px;
+    }
+
+    .themes-grid{
+        width: 90%;
+        grid-template-columns: 1fr;
+        margin: 30px auto;
+        gap: 20px;
+    }
+
+    .theme-card{
+        padding: 25px;
+    }
+
+    .theme-card h2{
+        font-size: 26px;
+    }
+
+    .theme-card p{
+        font-size: 16px;
+    }
+
+    /* Викторина */
+    .top-bar{
+        top: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .progress-container{
+        height: 16px;
+    }
+
+    .score-box{
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .quiz-container{
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 90%;
+        margin: 80px auto 30px;
+        padding-bottom: 30px;
+    }
+
+    .question-box{
+        padding: 20px;
+    }
+
+    .question-box h2{
+        font-size: 18px;
+    }
+
+    .question-box pre{
+        font-size: 14px;
+    }
+
+    .answer{
+        font-size: 16px;
+        padding: 14px;
+        transform: translateX(-400px);
+    }
+
+    .answer input{
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
+
+    .explanation-box{
+        font-size: 15px;
+    }
+
+    #actionBtn{
+        font-size: 18px;
+        padding: 14px 30px;
+        width: 100%;
+    }
+
+    /* Финал */
+    .result-box{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 40px 20px;
+        padding: 35px 20px;
+    }
+
+    .result-box h1{
+        font-size: 32px;
+    }
+
+    #finalScore{
+        font-size: 22px;
+    }
+
+    .stars{
+        font-size: 45px;
+    }
+}
