@@ -451,6 +451,8 @@ clickSound.volume   = 0.1;
 function showScreen(screen) {
     document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
     screen.classList.add("active");
+    window.scrollTo(0, 0);
+    screen.scrollTo(0, 0);
 }
 
 startBtn.addEventListener("click", () => {
